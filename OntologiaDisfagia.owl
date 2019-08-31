@@ -1,0 +1,1757 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#"
+     xml:base="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-87="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontologies="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSignals"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSignals -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSignals">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Signals"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSignals"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Sounds"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#has_DL -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#has_DL">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Disphagia_Levels"/>
+        <rdfs:comment>Disphagya levels</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Disphagia_Levels"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#User"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueM">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueS">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Sounds"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V1">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueM"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V2">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueM"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V3">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueM"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Disphagia_Levels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Disphagia_Levels">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Liquid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Liquid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Liquid"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_High"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Liquid"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Low"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Liquid"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Medium"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Low"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_High"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_High -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_High">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V1"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2500.0</xsd:minInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V1"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6000.0</xsd:maxInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V2"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2500.0</xsd:minInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V2"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6000.0</xsd:maxInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V3"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2500.0</xsd:minInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V3"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6000.0</xsd:maxInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Liquid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Liquid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V1"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V2"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V3"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Low -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Low">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V1"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V1"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2000.0</xsd:maxExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V2"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:maxExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V3"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:maxExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V1"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:maxExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V2"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V2"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2000.0</xsd:maxExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V3"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:maxExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V1"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:maxExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V2"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:maxExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V3"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V3"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2000.0</xsd:maxExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Medium">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V1"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2500.0</xsd:maxExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V2"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2500.0</xsd:maxExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V3"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2500.0</xsd:maxExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V1"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V2"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V1"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V3"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V2"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V3"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Unknown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Unknown">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V1"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6000.0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V2"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6000.0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V1"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6000.0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V3"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6000.0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V2"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6000.0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValue_V3"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6000.0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+        <rdfs:comment>Ainda falta fazer as modificacoes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Signals"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_High"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Liquid"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Low"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Medium"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Unknown"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueM"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Signals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#N1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#N1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Disphagia_Levels"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Unknown"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Disphagia_Levels"/>
+        <rdfs:comment>Refers to the absence of swallowing. In this case, there is a total restriction of oral diet.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#N2-N3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#N2-N3">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Disphagia_Levels"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Pasty"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Pasty"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Unknown"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Disphagia_Levels"/>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>Level 3 - semi-solid or pasty diet, assisted and using special strategies / maneuvers during feeding;
+Level 2 - partial use of diet via oral, being more indicated pastey diet, assisted, and with the use of compensatory maneuvers of deglutition;
+Types of food that can be swallowed at these levels: only pasty foods.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#N4-N5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#N4-N5">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Disphagia_Levels"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Solid"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Pasty"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Solid"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Pasty"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Solid"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Unknown"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Solid"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Unknown"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Disphagia_Levels"/>
+        <rdfs:comment>Level 5 - Bland diet
+Level 4 - Soft or semi-solid diet (Pastosa)
+Types of food that can be swallowed at these levels: Solid and Pasty</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#N6-N7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#N6-N7">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Disphagia_Levels"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Liquid"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Liquid"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Pasty"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Liquid"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Pasty"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Solid"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Liquid"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Pasty"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Solid"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Unknown"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Liquid"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Pasty"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Unknown"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Liquid"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Solid"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Liquid"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Solid"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Unknown"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Liquid"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Unknown"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Disphagia_Levels"/>
+        <rdfs:comment>Level 7 - Normal swallowing
+Level 6 - Normal swallowing, but with more time for swallowing
+Types of food that can be swallowed at these levels: Pasty, Solid and Liquid</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Pasty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Pasty">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Low"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Low"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Low"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Medium"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Medium"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_High"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Medium"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Low"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Medium"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Medium"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_High -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_High">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Sounds"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueS"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.08</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueS"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Sounds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Low -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Low">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Sounds"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueS"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.04</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Sounds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Medium">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Sounds"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueS"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.04</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueS"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.08</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Unknown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Unknown">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Sounds"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueS"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Sounds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Signals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Signals">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Solid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Solid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_High"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Low"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_High"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Medium"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Sounds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Sounds">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Signals"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_High"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Low"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Medium"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Unknown"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasValueS"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Signals"/>
+        <rdfs:comment>HasValueS is the value referring to the Standard Deviation of the sound signals</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Liquid"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Pasty"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Solid"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Unknown"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSignals"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSignals"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Sounds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Unknown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Unknown">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_High"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_High"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_High"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Unknown"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Liquid"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Unknown"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Low"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Unknown"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Medium"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Unknown"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Unknown"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_High"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Unknown"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Low"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Unknown"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Medium"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasMovement"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Unknown"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasSounds"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Unknown"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#User">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#has_DL"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#N1"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#has_DL"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#N2-N3"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#has_DL"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#N4-N5"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#has_DL"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#N6-N7"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Liquid"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Pasty"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Solid"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Unknown"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#has_DL"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Disphagia_Levels"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#isCompost"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#hasID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Paciente1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Paciente1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#User"/>
+        <isCompost rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#alimento"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#alimento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#alimento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Type_Food"/>
+        <hasMovement rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#movimento"/>
+        <hasSounds rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#audio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#audio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#audio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Sounds"/>
+        <hasValueS rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9</hasValueS>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#movimento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#movimento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Movements"/>
+        <hasValue_V1 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</hasValue_V1>
+        <hasValue_V2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</hasValue_V2>
+        <hasValue_V3 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</hasValue_V3>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Liquid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Pasty"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Solid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#Unknown"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_High"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Low"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Medium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#M_Unknown"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_High"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Low"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Medium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#S_Unknown"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

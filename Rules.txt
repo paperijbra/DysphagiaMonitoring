@@ -1,0 +1,604 @@
+#Rules for inferences for indivduals
+
+@prefix ont: <http://www.semanticweb.org/ingridymarina/ontologies/2017/2/untitled-ontology-87#>
+
+#Rules_Classification_Sound
+
+#Sound_Low
+#Part_1
+[
+	rule_s_low_part_1:
+	(?sound ont:hasValueS ?number)
+	le (?number, "0.04"^^xsd:float)
+	->
+	(?sound rdf:type ont:S_Low)
+]
+
+#Sound_High
+#Part_1
+[
+	rule_s_high_part_1:
+	(?sound ont:hasValueS ?number1)
+	ge (?number1, "0.08"^^xsd:float)
+	(?sound ont:hasValueS ?number1)
+	le (?number1, "1.0"^^xsd:float)
+	->
+	(?sound rdf:type ont:S_High)
+]
+
+#Sound_Medium
+#Part_1
+[
+	rule_s_medium_part_1:
+	(?sound ont:hasValueS ?number2)
+	greaterThan (?number2, "0.04"^^xsd:float)
+	(?sound ont:hasValueS ?number2)
+	lessThan (?number2, "0.08"^^xsd:float)
+	->
+	(?sound rdf:type ont:S_Medium)
+]
+
+#Sound_Unknown
+#Part_1
+[
+	rule_s_unknown_part_1:
+	(?sound ont:hasValueS ?number3)
+	greaterThan (?number3, "1.0"^^xsd:float)
+	->
+	(?sound rdf:type ont:S_Unknown)
+]
+
+
+#Regra_movimento
+
+#Movement_Low
+#Part_1
+[
+	rule_low_movement_part_1:
+	(?movement ont:hasValue_V1 ?m1)
+	lessThan (?m1, "1000"^^xsd:float)
+	(?movement ont:hasValue_V2 ?m2)
+	lessThan (?m2, "1000"^^xsd:float)
+	(?movement ont:hasValue_V3 ?m3)
+	greaterThan (?m3, "1000"^^xsd:float)
+	(?movement ont:hasValue_V3 ?m3)
+	lessThan (?m3, "2000"^^xsd:float)
+	
+	->
+	(?movement rdf:type ont:M_Low)
+]
+
+#Part_2
+[
+	rule_low_movement_part_2:
+	(?movement ont:hasValue_V1 ?m4)
+	lessThan (?m4, "1000"^^xsd:float)
+	(?movement ont:hasValue_V3 ?m5)
+	lessThan (?m5, "1000"^^xsd:float)
+	(?movement ont:hasValue_V2 ?m6)
+	lessThan (?m6, "2000"^^xsd:float)
+	(?movement ont:hasValue_V2 ?m7)
+	greaterThan (?m7, "1000"^^xsd:float)
+	->
+	(?movement rdf:type ont:M_Low)
+]
+
+#Part_3
+[
+	rule_low_movement_part_3:
+	(?movement ont:hasValue_V2 ?m7)
+	lessThan (?m7, "1000"^^xsd:float)
+	(?movement ont:hasValue_V3 ?m8)
+	lessThan (?m8, "1000"^^xsd:float)
+	(?movement ont:hasValue_V1 ?m9)
+	lessThan (?m9, "2000"^^xsd:float)
+	(?movement ont:hasValue_V1 ?m10)
+	greaterThan (?m10, "1000"^^xsd:float)
+	->
+	(?movement rdf:type ont:M_Low)
+]
+
+#Movement_High
+#Part_1
+[
+	rule_high_movement_part_1:
+	(?movement ont:hasValue_V1 ?m1)
+	le (?m1, "6000"^^xsd:float)
+	(?movement ont:hasValue_V1 ?m1)
+	ge (?m1, "2500"^^xsd:float)
+	->
+	(?movement rdf:type ont:M_High)
+]
+#Part_2
+[
+	rule_high_movement_part_2:
+	(?movement ont:hasValue_V2 ?m2)
+	le (?m2, "6000"^^xsd:float)
+	(?movement ont:hasValue_V2 ?m2)
+	ge (?m2, "2500"^^xsd:float)
+	->
+	(?movement rdf:type ont:M_High)
+]
+#Part_3
+[
+	rule_high_movement_part_3:
+	(?movement ont:hasValue_V3 ?m3)
+	ge (?m3, "2500"^^xsd:float)
+	(?movement ont:hasValue_V3 ?m3)
+	le (?m3, "6000"^^xsd:float)
+	->
+	(?movement rdf:type ont:M_High)
+]
+
+#MovementMedium
+
+#Part_1
+[
+	rule_medium_movement_part_1:
+	(?movement ont:hasValue_V1 ?m1)
+	lessThan (?m1, "2500"^^xsd:float)
+	(?movement ont:hasValue_V2 ?m2)
+	lessThan (?m2, "2500"^^xsd:float)
+	(?movement ont:hasValue_V3 ?m3)
+	lessThan (?m3, "2500"^^xsd:float)
+	(?movement ont:hasValue_V1 ?m4)
+	ge (?m4, "1000"^^xsd:float)
+	(?movement ont:hasValue_V2 ?m5)
+	ge (?m5, "1000"^^xsd:float)
+	->
+	(?movement rdf:type ont:M_Medium)
+]
+#Part_2
+[
+	rule_medium_movement_part_2:
+	(?movement ont:hasValue_V1 ?m1)
+	lessThan (?m1, "2500"^^xsd:float)
+	(?movement ont:hasValue_V2 ?m2)
+	lessThan (?m2, "2500"^^xsd:float)
+	(?movement ont:hasValue_V3 ?m3)
+	lessThan (?m3, "2500"^^xsd:float)
+	(?movement ont:hasValue_V1 ?m4)
+	ge (?m4, "1000"^^xsd:float)
+	(?movement ont:hasValue_V3 ?m5)
+	ge (?m5, "1000"^^xsd:float)
+	->
+	(?movement rdf:type ont:M_Medium)
+]
+#Part_3
+[
+	rule_medium_movement_part_3:
+	(?movement ont:hasValue_V1 ?m1)
+	lessThan (?m1, "2500"^^xsd:float)
+	(?movement ont:hasValue_V2 ?m2)
+	lessThan (?m2, "2500"^^xsd:float)
+	(?movement ont:hasValue_V3 ?m3)
+	lessThan (?m3, "2500"^^xsd:float)
+	(?movement ont:hasValue_V2 ?m4)
+	ge (?m4, "1000"^^xsd:float)
+	(?movement ont:hasValue_V3 ?m5)
+	ge (?m5, "1000"^^xsd:float)
+	->
+	(?movement rdf:type ont:M_Medium)
+]
+
+#Movement_Unknown
+#Part_1
+[
+	rule_unknown_movement_part_1:
+	(?movement ont:hasValue_V1 ?m1)
+	greaterThan (?m1, "6000"^^xsd:float)
+	(?movement ont:hasValue_V2 ?m2)
+	greaterThan (?m2, "6000"^^xsd:float)
+	->
+	(?movement rdf:type ont:M_Unknown)
+]
+#Part_2
+[
+	rule_unknown_movement_part_2:
+	(?movement ont:hasValue_V1 ?m1)
+	greaterThan (?m1, "6000"^^xsd:float)
+	(?movement ont:hasValue_V3 ?m2)
+	greaterThan (?m2, "6000"^^xsd:float)
+	->
+	(?movement rdf:type ont:M_Unknown)
+]
+#Part_3
+[
+	rule_unknown_movement_part_3:
+	(?movement ont:hasValue_V2 ?m1)
+	greaterThan (?m1, "6000"^^xsd:float)
+	(?movement ont:hasValue_V3 ?m2)
+	greaterThan (?m2, "6000"^^xsd:float)
+	->
+	(?movement rdf:type ont:M_Unknown)
+]
+
+
+#Movement_Liquid
+#Part_1
+[
+	rule_liquid_movement_part_1:
+	(?movement ont:hasValue_V1 ?m1)
+	le (?m1, "1000"^^xsd:float)
+	(?movement ont:hasValue_V2 ?m2)
+	le (?m2, "1000"^^xsd:float)
+	(?movement ont:hasValue_V3 ?m3)
+	le (?m3, "1000"^^xsd:float)
+	->
+	(?movement rdf:type ont:M_Liquid)
+]
+
+
+#Regras_Tipo_de_Alimento
+
+#Type_Food_Solid
+#Part_1
+[
+	rule_solid_part_1:
+	(?food ont:hasMovement ?moviment)
+	(?moviment rdf:type ont:M_High)
+	(?food ont:hasSounds ?so)
+	(?so rdf:type ont:S_Low)
+	->
+	(?food rdf:type ont:Solid)
+]
+#Part_2
+[
+	rule_solid_part_2:
+	(?food ont:hasMovement ?movimento1)
+	(?movimento1 rdf:type ont:M_High)
+	(?food ont:hasSounds ?som1)
+	(?som1 rdf:type ont:S_Medium)
+	->
+	(?food rdf:type ont:Solid)
+]
+
+#Type_Food_Pasty
+#Part_1
+[
+	rule_pasty_part_1:
+	(?food ont:hasMovement ?movimento2)
+	(?movimento2 rdf:type ont:M_Low)
+	(?food ont:hasSounds ?som2)
+	(?som2 rdf:type ont:S_Low)
+	->
+	(?food rdf:type ont:Pasty)
+]
+#Part_2
+[
+	rule_pasty_part_2:
+	(?food ont:hasMovement ?movimento3)
+	(?movimento3 rdf:type ont:M_Low)
+	(?food ont:hasSounds ?som3)
+	(?som3 rdf:type ont:S_Medium)
+	->
+	(?food rdf:type ont:Pasty)
+]
+#Part_3
+[
+	rule_pasty_part_3:
+	(?food ont:hasMovement ?movimento3)
+	(?movimento3 rdf:type ont:M_Medium)
+	(?food ont:hasSounds ?som3)
+	(?som3 rdf:type ont:S_High)
+	->
+	(?food rdf:type ont:Pasty)
+]
+#Part_4
+[
+	rule_pasty_part_4:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_Medium)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_Low)
+	->
+	(?food rdf:type ont:Pasty)
+]
+#Part_5
+[
+	rule_pasty_part_5:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_Medium)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_Medium)
+	->
+	(?food rdf:type ont:Pasty)
+]
+
+#Type_Food_Liquid
+#Part_1
+[
+	rule_liquid_part_1:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_Liquid)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_High)
+	->
+	(?food rdf:type ont:Liquid)
+]
+#Part_2
+[
+	rule_liquid_part_2:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_Liquid)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_Low)
+	->
+	(?food rdf:type ont:Liquid)
+]
+#Part_3
+[
+	rule_liquid_part_3:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_Liquid)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_Medium)
+	->
+	(?food rdf:type ont:Liquid)
+]
+#Part_4
+[
+	rule_liquid_part_4:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_Low)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_High)
+	->
+	(?food rdf:type ont:Liquid)
+]
+
+#Type_Food_Unknown
+#Part_1
+[
+	rule_unknown_part_1:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_High)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_High)
+	->
+	(?food rdf:type ont:Unknown)
+]
+#Part_2
+[
+	rule_unknown_part_2:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_High)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_Unknown)
+	->
+	(?food rdf:type ont:Unknown)
+]
+#Part_3
+[
+	rule_unknown_part_3:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_Liquid)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_Unknown)
+	->
+	(?food rdf:type ont:Unknown)
+]
+#Part_4
+[
+	rule_unknown_part_4:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_Low)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_Unknown)
+	->
+	(?food rdf:type ont:Unknown)
+]
+#Part_5
+[
+	rule_unknown_part_5:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_Medium)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_Unknown)
+	->
+	(?food rdf:type ont:Unknown)
+]
+#Part_6
+[
+	rule_unknown_part_6:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_Unknown)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_High)
+	->
+	(?food rdf:type ont:Unknown)
+]
+#Part_7
+[
+	rule_unknown_part_7:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_Unknown)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_Low)
+	->
+	(?food rdf:type ont:Unknown)
+]
+#Part_8
+[
+	rule_unknown_part_8:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_Unknown)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_Medium)
+	->
+	(?food rdf:type ont:Unknown)
+]
+#Part_9
+[
+	rule_unknown_part_9:
+	(?food ont:hasMovement ?movimento)
+	(?movimento rdf:type ont:M_Unknown)
+	(?food ont:hasSounds ?som)
+	(?som rdf:type ont:S_Unknown)
+	->
+	(?food rdf:type ont:Unknown)
+]
+
+#Regras_Niveis_Disfagia
+
+#Disphagia_Leves_N1
+#Part_1
+[
+	rule_n1_part_1:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Unknown)
+	->
+	(?user rdf:type ont:N1)
+]
+
+#Disphagia_Leves_N2-N3
+#Part_1
+[
+	rule_n2-n3_part_1:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Pasty)
+	->
+	(?user rdf:type ont:N2_N3)
+]
+#Part_2
+[
+	rule_n2-n3_part_2:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Pasty)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Unknown)
+	->
+	(?user rdf:type ont:N2_N3)
+]
+
+#Disphagia_Levels_N4-N5
+#Part_1
+[
+	rule_n4-n5_part_1:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Solid)
+	->
+	(?user rdf:type ont:N4_N5)
+]
+#Part_2
+[
+	rule_n4-n5_part_2:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Solid)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Unknown)
+	->
+	(?user rdf:type ont:N4_N5)
+]
+#Part_3
+[
+	rule_n4-n5_part_3:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Solid)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Pasty)
+	->
+	(?user rdf:type ont:N4_N5)
+]
+#Part_4
+[
+	rule_n4-n5_part_4:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Solid)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Pasty)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Unknown)
+	->
+	(?user rdf:type ont:N4_N5)
+]
+
+#Disphagia_Levels_N6-N7
+#Part_1
+[
+	rule_n6-n7_part_1:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Liquid)
+	->
+	(?user rdf:type ont:N6_N7)
+]
+#Part_2
+[
+	rule_n6-n7_part_2:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Liquid)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Pasty)
+	->
+	(?user rdf:type ont:N6_N7)
+]
+#Part_3
+[
+	rule_n6-n7_part_3:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Liquid)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Solid)
+	->
+	(?user rdf:type ont:N6_N7)
+]
+#Part_4
+[
+	rule_n6-n7_part_4:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Liquid)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Unknown)
+	->
+	(?user rdf:type ont:N6_N7)
+]
+#Part_5
+[
+	rule_n6-n7_part_5:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Liquid)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Pasty)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Solid)
+	->
+	(?user rdf:type ont:N6_N7)
+]
+#Part_6
+[
+	rule_n6-n7_part_6:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Liquid)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Pasty)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Unknown)
+	->
+	(?user rdf:type ont:N6_N7)
+]
+#Part_7
+[
+	rule_n6-n7_part_7:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Liquid)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Solid)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Unknown)
+	->
+	(?user rdf:type ont:N6_N7)
+]
+#Part_8
+[
+	rule_n6-n7_part_8:
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Liquid)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Pasty)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Solid)
+	(?user ont:isCompost ?food)
+	(?food rdf:type ont:Unknown)
+	->
+	(?user rdf:type ont:N6_N7)
+]
